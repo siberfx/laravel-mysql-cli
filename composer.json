@@ -1,0 +1,25 @@
+{
+    "name": "thecoderepublic/tablavel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Francisc",
+            "email": "franciscboicu@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "TheCodeRepublic\\Tablavel\\": "src/"
+        }
+    },
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "TheCodeRepublic\\Tablavel\\TablavelServiceProvider"
+            ]
+        }
+    }
+}
