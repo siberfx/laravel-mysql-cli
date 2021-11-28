@@ -14,7 +14,7 @@ class TablavelCommand extends Command
     protected $description = 'Laravel Database Client CLI';
 
     const ERR_NO_ACTION = "No action selected.";
-    const ERR_NO_TABLE = "No table selected. Cmd: /use {tablename}";
+    const ERR_NO_TABLE = "No table selected. Cmd: /u {tablename}";
 
     public function __construct()
     {
@@ -55,7 +55,6 @@ class TablavelCommand extends Command
             'description' => 'Back to main menu',
         ],
     ];
-
 
     public function handle()
     {
@@ -220,10 +219,6 @@ class TablavelCommand extends Command
         return $columns;
     }
 
-    /**
-     * Connects to the active database in config and gets the tables
-     * @return array
-     */
     private function getNamesTablesDB(): array
     {
 
