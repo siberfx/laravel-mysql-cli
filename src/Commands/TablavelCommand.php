@@ -13,7 +13,6 @@ class TablavelCommand extends Command
 
     protected $description = 'Laravel Database Client CLI';
 
-    const SELECT_TABLES = 'SHOW TABLES';
     const ERR_NO_ACTION = "No action selected.";
     const ERR_NO_TABLE = "No table selected. Cmd: /use {tablename}";
 
